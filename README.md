@@ -11,7 +11,9 @@ change the ip_address in the ip_address.py file
 
 run the get_light_names() function to print your light names
 
-change the light name you want to change in following functions:
+Every function effects all lights.
+
+To change a single light, fill in the lamp name you want to change in following functions:
 
 set_left_lamp()
 
