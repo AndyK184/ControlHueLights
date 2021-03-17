@@ -11,13 +11,12 @@ def get_light_names(bridge_ip_address):
     light_name_list = b.get_light_objects('name')
     return light_name_list
 
-def film_lights():
+def warm_white_lights():
     lights = get_light_names(bridge_ip_address)
     for light in lights:
         lights[light].on = True
         lights[light].hue = '10000'
         lights[light].saturation = 200
-        lights[light].brightness = 75
 
 def red_lights():
     lights = get_light_names(bridge_ip_address)
@@ -97,4 +96,4 @@ def stop_color_loop():
 
 # Fill in the function you want to run
 if __name__ == '__main__':
-   new_lights()
+   warm_white_lights()
